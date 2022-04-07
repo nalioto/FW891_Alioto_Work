@@ -34,10 +34,7 @@
             linetype = "solid") + #Changed linetype only worked this way
     scale_fill_manual(values = c("salmon", "goldenrod1",  #custom fill of colors
                                   "red", "turquoise")) +
-    scale_shape_manual(values=c(8,18)) +
-    geom_sf_text(data = states_SF,
-                  mapping = aes(geometry=geometry, label=postal),
-                  color="yellow") + 
+    scale_shape_manual(values=c(8,18)) + 
     geom_sf(data = lakes_SF,
             mapping = aes(geometry = geometry, color=scalerank), #scalerank
             fill = "red") +
